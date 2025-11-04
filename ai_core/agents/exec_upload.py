@@ -1,0 +1,1 @@
+exec(open('/workspace/github_upload.py').read())

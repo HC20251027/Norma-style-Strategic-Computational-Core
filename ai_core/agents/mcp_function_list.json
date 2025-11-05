@@ -1,0 +1,168 @@
+{
+  "functions": [
+    {
+      "name": "system_info",
+      "description": "获取系统信息",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "health_check",
+      "description": "系统健康检查",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "dragon_blood_analysis",
+      "description": "血统分析功能",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "student_name": {
+            "type": "string",
+            "description": "学生姓名"
+          }
+        }
+      }
+    },
+    {
+      "name": "chat_message",
+      "description": "处理聊天消息",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "用户消息"
+          },
+          "user_id": {
+            "type": "string",
+            "description": "用户ID"
+          }
+        }
+      }
+    },
+    {
+      "name": "search_knowledge",
+      "description": "知识库搜索",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "搜索查询"
+          },
+          "type": {
+            "type": "string",
+            "description": "搜索类型",
+            "default": "general"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_system_logs",
+      "description": "获取系统日志",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "integer",
+            "description": "日志条数限制",
+            "default": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "security_check",
+      "description": "安全状态检查",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "agent_status",
+      "description": "获取智能体状态",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "upload_document",
+      "description": "上传文档",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "文件路径"
+          }
+        }
+      }
+    },
+    {
+      "name": "process_audio",
+      "description": "处理音频文件",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "audio_data": {
+            "type": "string",
+            "description": "音频数据"
+          },
+          "format": {
+            "type": "string",
+            "description": "音频格式"
+          }
+        }
+      }
+    },
+    {
+      "name": "process_image",
+      "description": "处理图像文件",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "image_data": {
+            "type": "string",
+            "description": "图像数据"
+          },
+          "operation": {
+            "type": "string",
+            "description": "处理操作"
+          }
+        }
+      }
+    },
+    {
+      "name": "process_video",
+      "description": "处理视频文件",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "video_data": {
+            "type": "string",
+            "description": "视频数据"
+          },
+          "operation": {
+            "type": "string",
+            "description": "处理操作"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "description": "诺玛式战略计算中枢 MCP 函数列表",
+    "created": "2025-11-05",
+    "author": "MiniMax Agent"
+  }
+}
